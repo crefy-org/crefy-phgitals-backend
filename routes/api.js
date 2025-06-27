@@ -13,11 +13,11 @@ const orderRoutes = require('./orders.routes');
 const statsRoutes = require('./stats.routes');
 
 // Use all routes
+router.use(productRoutes);
 router.use(authRoutes);
 router.use(adminRoutes);
 router.use(userRoutes);
 router.use(tokenRoutes);
-router.use(productRoutes);
 router.use(cartRoutes);
 router.use(orderRoutes);
 router.use(statsRoutes);
