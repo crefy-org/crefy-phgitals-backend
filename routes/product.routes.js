@@ -31,9 +31,6 @@ const { authenticate } = require('../middleware/auth');
  */
 router.get('/products', productController.getProducts);
 
-// Protected routes
-router.use(authenticate);
-
 /**
  * @swagger
  * /products/seed:
