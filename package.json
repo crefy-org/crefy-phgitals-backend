@@ -5,8 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
+    "build": "echo 'No build step required. DONE'",
     "dev": "nodemon server.js",
-    "deploy": "pm2 start server.js --name crefy-phygitals-backend --instances 2"
+    "deploy": "pm2 start server.js --name api.crefy-phygitals.crefy.xyz --instances 2"
   },
   "keywords": [],
   "author": "",
